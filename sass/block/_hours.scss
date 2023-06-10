@@ -1,0 +1,51 @@
+.hours{
+    padding: 30px 0 60px 0;
+    height: auto;
+    &__title{
+        font-size: 25px;
+        font-weight: 700;
+    }
+    &__company{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__text{
+        font-size: 40px;
+        font-family: "Delicious Handrawn",sans-serif;
+    }
+    &__descr{
+        text-align: center;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .hours__form{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+        margin-top: 30px;
+        &-input{
+            height: 45px;
+            border-radius: 5px;
+            border: 1px solid rgb(143, 143, 143);
+            padding: 0 10px;
+            font-size: 16px;
+        }
+        &-btn{
+            border: 1px solid #fff;
+            background: linear-gradient(89.6deg, rgba(65, 159, 55) 21.52%, rgba(121, 210, 61) 100%);
+            font-size: 18px;
+            font-weight: 700;
+            color: #fff;
+            border-radius: 5px;
+            &:hover{
+                background: #fff;
+                color: #000;
+                border: 1px solid rgba(65, 159, 55);
+                transition: 0.6s all;
+            }
+        }
+    }
+}

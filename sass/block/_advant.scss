@@ -1,0 +1,42 @@
+.advant{
+    height: auto;
+    padding: 20px 0;
+    &__title{
+        font-size: 25px;
+        font-weight: 700;
+    }
+    &__wrapper{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(410px, 1fr));
+        column-gap: 15px;
+        row-gap: 15px;
+        justify-content: center;
+        margin-top: 30px;
+        &-item{
+            height: auto;
+            background-color: rgb(240, 240, 240);
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            border: 2px solid #fff;
+            padding: 20px 0;
+            &:hover{
+                border: 2px solid rgba(65, 159, 55);
+                box-shadow: 5px 5px 5px rgba(151, 151, 151, 0.541);
+                transition: 0.6s all;
+            }
+            .title{
+                font-size: 18px;
+                font-weight: 700;
+            }
+            .descr{
+                text-align: center;
+            }
+            img{
+                width: 80px;
+            }
+        }
+    }
+}

@@ -1,0 +1,118 @@
+.tab{
+    height: auto;
+    padding: 30px 0;
+    .tabs__title{
+        font-size: 25px;
+        font-weight: 700;
+        margin-top: 50px;
+    }
+    &__title{
+        font-size: 25px;
+        font-weight: 700;
+
+    }
+    &__line{
+        width: 100%;
+        height: 10px;
+        border-radius: 10px;
+        background: linear-gradient(89.6deg, rgba(65, 159, 55) 21.52%, rgba(121, 210, 61) 100%);
+        margin-top: 50px;
+    }
+    .tabheader{
+        &__items{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        &__item{
+            padding: 10px;
+            height: 130px;
+            background-color: rgb(240, 240, 240);
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            border: 2px solid #fff;
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+            &:hover{
+                border: 2px solid rgba(65, 159, 55);
+                .descr{
+                    color: rgba(65, 159, 55);
+                }
+            }
+            img{
+                width: 50px;
+            }
+            .descr{
+                font-weight: 700;
+                font-size: 18px;
+                text-align: center;
+            }
+        }
+    }
+    .tabcontent{
+        &__wrapper{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            justify-content: center;
+            gap: 20px;
+            margin-top: 50px;
+        }
+        &__item{
+            height: auto;
+            background-color: rgb(235, 235, 235);
+            border-radius: 5px;
+            padding: 10px;
+            &-img{
+                width: 100%;
+                border-radius: 5px;
+            }
+            .title{
+                font-size: 18px;
+                font-weight: 700;
+                margin-top: 10px;
+            }
+            &-btn{
+                width: 100%;
+                background: linear-gradient(89.6deg, rgba(65, 159, 55) 21.52%, rgba(121, 210, 61) 100%);
+                font-size: 18px;
+                font-weight: 700;
+                color: #fff;
+                border-radius: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: none;
+                line-height: 30px;
+                padding: 10px;
+                margin-top: 20px;
+                &:hover{
+                    background: linear-gradient(89.6deg, rgba(121, 210, 61) 100%, rgba(65, 159, 55) 21.52%);
+                }
+            }
+            .price{
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                font-size: 25px;
+                font-weight: 700;
+                align-items: center;
+                margin-top: 10px;
+                span{
+                    color: rgb(168, 168, 168);
+                    text-decoration: line-through;
+                    font-size: 16px;
+                }
+            }
+            .descr{
+                font-size: 15px;
+                margin-top: 10px;
+            }
+        }
+    }
+}
